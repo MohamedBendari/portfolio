@@ -29,8 +29,8 @@ const handleClick = (id) => {
       >
         <div class="flex items-center justify-between p-6 border-b border-white/10">
           <div>
-            <h2 class="text-xl font-bold text-white">Ahsan Ali</h2>
-            <p class="text-sm text-gray-400">Full Stack Developer</p>
+            <h2 class="text-xl font-bold text-white">Mohamed Bendary</h2>
+            <p class="text-sm text-gray-400">Software Engineer</p>
           </div>
 
           <button
@@ -71,12 +71,12 @@ const handleClick = (id) => {
 
 <style scoped>
 .fade-enter-active,
-.fade-leave-active{
-transition:.3s;
+.fade-leave-active {
+  transition: .3s;
 }
 
 .fade-enter-from,
-.fade-leave-to{
-opacity:0;
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

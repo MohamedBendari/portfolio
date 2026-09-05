@@ -20,22 +20,22 @@
       <!-- Left column: content -->
       <div class="flex flex-col items-start text-left">
         <p
-          class="hero-fade-in mb-6 inline-flex items-center gap-2 rounded-full border border-white/10
-                 bg-white/5 px-4 py-1.5 text-sm text-white/80 backdrop-blur-sm"
-        >
-          <span class="relative flex h-2 w-2" aria-hidden="true">
-            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-            <span class="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
-          </span>
-          Available for Freelance
-        </p>
+  class="hero-fade-in mb-6 inline-flex items-center gap-2 rounded-full border border-white/10
+         bg-white/5 px-4 py-1.5 text-sm text-white/80 backdrop-blur-sm"
+>
+  <span class="relative flex h-2 w-2" aria-hidden="true">
+    <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+    <span class="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
+  </span>
+  Software Engineer
+</p>
 
         <p class="hero-fade-in hero-delay-1 text-lg text-white/70 sm:text-xl">Hi, I'm</p>
 
         <h1 class="hero-fade-in hero-delay-2 mt-1 text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-          Ahsan
+          Mohamed
           <span class="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
-            Ali
+            Bendary 
           </span>
         </h1>
 
@@ -48,11 +48,13 @@
         </p>
 
         <p class="hero-fade-in hero-delay-4 mt-6 max-w-xl text-base leading-relaxed text-white/60 sm:text-lg">
-          I build modern web applications with
-          <strong class="font-semibold text-white/80">Laravel</strong>,
-          <strong class="font-semibold text-white/80">Vue.js</strong>, and
-          <strong class="font-semibold text-white/80">Node.js</strong> —
-          crafting fast, scalable REST APIs and automating workflows that save teams real time.
+          I build responsive and scalable web applications using
+<strong class="font-semibold text-white/80">modern frontend</strong>
+and
+<strong class="font-semibold text-white/80">backend technologies</strong>,
+with a focus on
+<strong class="font-semibold text-white/80">REST APIs</strong>,
+database design, and reliable software solutions.
         </p>
 
         <ul class="hero-fade-in hero-delay-5 mt-8 flex flex-wrap gap-2" aria-label="Technology stack">
@@ -103,13 +105,15 @@
 
         <!-- floating tech badges -->
         <span class="float-fast absolute -top-4 right-2 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm">
-          ⚡ Vue 3
-        </span>
-        <span class="float-medium absolute -right-8 top-1/4 hidden rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm sm:block">
-          🚀 Laravel
-        </span>
-        <span class="float-slow absolute bottom-2 right-0 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm">
-          🟢 Node.js
+   Django
+</span>
+
+<span class="float-medium absolute -right-8 top-1/4 hidden rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm sm:block">
+   Vue.js
+</span>
+
+<span class="float-slow absolute bottom-2 right-0 rounded-lg border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 shadow-lg backdrop-blur-sm">
+   REST API
         </span>
       </div>
     </div>
