@@ -1,68 +1,94 @@
 <script setup>
 import {
   Github,
-  ExternalLink,
   Check,
-  Boxes,
-  FileScan,
-  MessagesSquare,
-  LayoutGrid,
+  Network,
+  CalendarDays,
+  Smartphone,
+  Car,
 } from 'lucide-vue-next'
 
 // Single source of truth for all project cards
 const projects = [
   {
-    title: 'Asset Management System',
+    title: 'ANCS — Auto Network Configuration System',
     description:
-      'A professional admin dashboard for tracking, assigning and auditing company assets at scale.',
-    icon: Boxes,
+      'An AI-powered network automation platform designed to simplify network configuration, deployment and monitoring.',
+    icon: Network,
     gradient: { from: '#6366f1', to: '#0ea5e9' },
     features: [
-      'Role Based Authentication',
-      'QR Code Asset Tracking',
-      'Inventory Management',
-      'Professional Admin Dashboard',
+      'Automated Network Configuration',
+      'Secure Remote Device Management',
+      'AI-Assisted Troubleshooting',
+      'GNS3 Network Simulation Integration',
     ],
-    techs: ['Laravel', 'Vue.js', 'MySQL'],
-    githubUrl: 'https://github.com/ahsanali35103/asset-management-system.git'
-  },
-  {
-    title: 'AI Powered PDF Processor',
-    description:
-      'An intelligent document pipeline that extracts, reads and structures data from scanned PDFs automatically.',
-    icon: FileScan,
-    gradient: { from: '#f97316', to: '#ec4899' },
-    features: [
-      'OCR Text Extraction',
-      'AI Processing Pipeline',
-      'OpenAI-Powered Document Understanding',
+    techs: [
+      'Python',
+      'Django',
+      'Django REST Framework',
+      'Vue.js',
+      'PostgreSQL',
+      'JWT',
     ],
-    techs: ['Laravel', 'Python', 'OCR', 'OpenAI API', 'MongoDB'],
-    githubUrl: 'https://github.com/ahsanali35103/ai-powered-pdf-processor.git'
+    githubUrl: '#',
   },
+
   {
-    title: 'Real-Time Chat Application',
+    title: 'Doctor Appointment Booking System',
     description:
-      'A team-based messaging platform with live channels, instant delivery and secure authentication.',
-    icon: MessagesSquare,
+      'A web application for managing doctor appointments with a responsive interface and an organized booking experience.',
+    icon: CalendarDays,
     gradient: { from: '#22c55e', to: '#0ea5e9' },
     features: [
-      'Channels & Teams',
-      'Real-Time Messaging',
-      'Authentication',
+      'Doctor Appointment Booking',
+      'Responsive User Interface',
+      'Organized Appointment Management',
     ],
-    techs: ['Laravel', 'Vue.js', 'Node.js'],
-    githubUrl: 'https://github.com/ahsanali35103/chat-app-laravel.git'
+    techs: [
+      'Vue.js',
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'Bootstrap 5',
+    ],
+    githubUrl: '#',
   },
+
   {
-    title: 'Developer Portfolio',
+    title: 'Hedayati Mobile App',
     description:
-      'A modern, responsive personal portfolio built to showcase projects and technical expertise.',
-    icon: LayoutGrid,
+      'A cross-platform mobile application built to provide a practical and accessible mobile experience.',
+    icon: Smartphone,
     gradient: { from: '#a855f7', to: '#6366f1' },
-    features: ['Modern UI', 'Fully Responsive Design'],
-    techs: ['Vue.js', 'Tailwind CSS'],
-    githubUrl: '#'
+    features: [
+      'Cross-Platform Mobile Application',
+      'Responsive Mobile Interface',
+      'Flutter-Based Development',
+    ],
+    techs: [
+      'Flutter',
+      'Dart',
+    ],
+    githubUrl: '#',
+  },
+
+  {
+    title: 'Garage Smart System',
+    description:
+      'An IoT-based smart parking system designed to monitor parking availability and support vehicle management.',
+    icon: Car,
+    gradient: { from: '#f97316', to: '#ec4899' },
+    features: [
+      'Smart Parking Management',
+      'Parking Availability Monitoring',
+      'Vehicle Management',
+      'IoT Integration',
+    ],
+    techs: [
+      'IoT',
+      'Embedded Systems',
+    ],
+    githubUrl: '#',
   },
 ]
 </script>
@@ -88,8 +114,9 @@ const projects = [
           Projects That Showcase My Skills
         </h2>
         <p class="mt-4 text-base leading-relaxed text-neutral-400 sm:text-lg">
-          A collection of real-world applications demonstrating my
-          experience in Laravel, Vue.js, Node.js and AI Automation.
+            A selection of projects that reflect my experience across
+  full-stack web development, backend systems, APIs, databases,
+  mobile development and IoT solutions.
         </p>
       </div>
 
@@ -174,7 +201,8 @@ const projects = [
               <!-- Actions -->
              <div class="mt-6 flex flex-wrap items-center gap-3 pt-2">
   <a
-    :href="project.githubUrl"
+  v-if="project.githubUrl !== '#'"
+  :href="project.githubUrl"
     target="_blank"
     rel="noopener noreferrer"
     :aria-label="`View ${project.title} source code on GitHub`"

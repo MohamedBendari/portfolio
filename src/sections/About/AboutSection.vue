@@ -1,7 +1,6 @@
 <script setup>
 import {
   Code2,
-  Sparkles,
   GraduationCap,
   Briefcase,
   Layers,
@@ -14,37 +13,40 @@ import {
 
 // Quick stats — data-driven since all 4 cards share the same shape
 const quickStats = [
-  { label: 'Projects Built', value: '10+' },
-  { label: 'Technologies', value: '16+' },
-  { label: 'Learning Journey', value: '2+ Years' },
-  { label: 'Availability', value: 'Open for Work', live: true },
+  { label: 'Graduation', value: '2026' },
+  { label: 'Main Focus', value: 'Full-Stack' },
+  { label: 'Backend', value: 'Django' },
+  { label: 'APIs', value: 'REST' },
 ]
 
 // "Why Work With Me" — data-driven since all 3 cards share the same shape
 const features = [
   {
     icon: Layers,
-    title: 'Clean Architecture',
-    description: 'Structured, maintainable code built to scale with your product.',
+    title: 'Clean & Maintainable Code',
+    description:
+      'I focus on writing structured code that is easy to understand, maintain, and extend.',
   },
   {
     icon: LayoutTemplate,
-    title: 'Modern UI',
-    description: 'Interfaces that feel premium, intuitive and on-brand.',
+    title: 'Full-Stack Mindset',
+    description:
+      'I understand how frontend, backend, APIs and databases work together as one system.',
   },
   {
     icon: Zap,
-    title: 'Performance Focused',
-    description: 'Fast load times and smooth interactions, by default.',
+    title: 'Problem Solving',
+    description:
+      'I approach technical problems step by step and focus on practical, reliable solutions.',
   },
 ]
 
 // Skills mentioned in the internship experience card
 const experienceSkills = [
-  { icon: Code2, label: 'PHP Backend Development' },
-  { icon: Database, label: 'REST APIs' },
-  { icon: KeyRound, label: 'Authentication' },
-  { icon: ShieldCheck, label: 'Database Management' },
+  { icon: Code2, label: 'Django & Python' },
+  { icon: Database, label: 'REST API Development' },
+  { icon: KeyRound, label: 'JWT Authentication' },
+  { icon: ShieldCheck, label: 'Database Design' },
 ]
 </script>
 
@@ -81,21 +83,28 @@ const experienceSkills = [
                 </div>
               </div>
 
-              <h3 class="text-xl font-bold text-white sm:text-2xl">Ahsan Ali</h3>
-              <p class="mt-1 text-sm font-medium text-indigo-400 sm:text-base">
-                Full Stack Developer
-              </p>
-              <p class="mt-1 text-sm text-neutral-500">
-                Laravel · Vue.js · Node.js
-              </p>
+              <h3 class="text-xl font-bold text-white sm:text-2xl">
+  Mohamed Bendary Saber
+</h3>
+
+<p class="mt-1 text-sm font-medium text-indigo-400 sm:text-base">
+  Software Engineer
+</p>
+
+<p class="mt-1 text-sm text-neutral-500">
+  Django · Vue.js · REST APIs
+</p>
 
               <!-- Experience badge -->
               <div
                 class="mx-auto mt-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2"
               >
-                <Sparkles class="h-4 w-4 text-amber-400" aria-hidden="true" />
+                <Code2
+  class="h-4 w-4 text-amber-400"
+  aria-hidden="true"
+/>
                 <span class="text-xs font-medium text-neutral-300 sm:text-sm">
-                  🚀 Building Real-World Applications
+                  Building Real-World Applications
                 </span>
               </div>
             </div>
@@ -118,7 +127,7 @@ const experienceSkills = [
             class="fade-up mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl"
             style="animation-delay: 60ms"
           >
-            Crafting Modern Digital Experiences
+            Building Practical & Scalable Software
           </h2>
 
           <!-- Description -->
@@ -126,28 +135,28 @@ const experienceSkills = [
             class="fade-up mt-6 space-y-4 text-base leading-relaxed text-neutral-400 sm:text-lg"
             style="animation-delay: 120ms"
           >
-            <p>
-              I'm a full stack developer focused on building scalable, secure
-              web applications with <strong class="text-neutral-200 font-medium">Laravel</strong>,
-              <strong class="text-neutral-200 font-medium">Vue.js</strong> and
-              <strong class="text-neutral-200 font-medium">Node.js</strong>.
-              My work spans the entire stack — from designing REST APIs and
-              handling authentication, to structuring clean, well-modeled
-              databases on the backend.
-            </p>
-            <p>
-              I care deeply about writing clean code, thinking through
-              scalable application architecture, and optimizing for
-              real-world performance rather than just shipping features that
-              work on the surface.
-            </p>
-            <p>
-              Beyond traditional web development, I'm actively exploring
-              <strong class="text-neutral-200 font-medium">AI automation</strong>,
-              integrating intelligent workflows into the applications I
-              build to solve problems more efficiently for the people who
-              use them.
-            </p>
+            
+              <p>
+  I'm a Software Engineer focused on building full-stack web applications
+  with modern frontend and backend technologies. My main experience includes
+  developing REST APIs, working with databases, implementing authentication,
+  and connecting backend services with responsive frontend applications.
+</p>
+
+<p>
+  I enjoy working across the different parts of an application, from
+  designing database structures and backend logic to building clean user
+  interfaces and integrating APIs. I focus on writing maintainable code and
+  understanding how each part of the system works together.
+</p>
+
+<p>
+  My graduation project, <strong class="text-neutral-200 font-medium">ANCS</strong>,
+  gave me practical experience building a complete system using
+  <strong class="text-neutral-200 font-medium">Django REST Framework</strong>,
+  <strong class="text-neutral-200 font-medium">Vue.js</strong>,
+  PostgreSQL, JWT authentication, and Python-based network automation.
+</p>
           </div>
 
           <!-- Quick Stats -->
@@ -196,9 +205,11 @@ const experienceSkills = [
                 />
               </div>
               <h3 class="mt-4 text-base font-semibold text-white">
-                BS Information Technology
+                  Bachelor of Technology in Software Engineering
+
               </h3>
-              <p class="mt-1 text-sm text-neutral-500">University Graduate</p>
+              <p class="mt-1 text-sm text-neutral-500">   New Cairo Technological University · 2026
+</p>
             </div>
 
             <!-- Experience Card -->
@@ -217,12 +228,10 @@ const experienceSkills = [
                 />
               </div>
               <h3 class="mt-4 text-base font-semibold text-white">
-                PHP Laravel Intern
+                 Full-Stack Development
               </h3>
               <p class="mt-1 text-sm text-neutral-500">
-                Hands-on experience building backend systems in a
-                professional environment.
-              </p>
+              Practical experience building complete web applications and backend APIs.</p>
               <ul role="list" class="mt-4 space-y-2">
                 <li
                   v-for="skill in experienceSkills"

@@ -3,54 +3,53 @@ import {
   Layers3,
   MonitorSmartphone,
   Server,
-  Sparkles,
+  ShieldCheck,
   Database,
   Workflow,
 } from 'lucide-vue-next'
-
 // Single source of truth for the service cards
 const services = [
   {
     icon: Layers3,
-    title: 'Laravel Development',
+    title: 'Full-Stack Web Development',
     description:
-      'Build secure, scalable Laravel applications, admin dashboards and enterprise REST APIs.',
+      'Build responsive web applications that connect modern frontend interfaces with reliable backend services.',
     accent: '#6366f1',
   },
   {
     icon: MonitorSmartphone,
     title: 'Vue.js Frontend',
     description:
-      'Create modern, responsive and high-performance user interfaces using Vue.js and Tailwind CSS.',
+      'Create responsive and user-friendly interfaces using Vue.js, JavaScript, HTML5 and CSS3.',
     accent: '#0ea5e9',
   },
   {
     icon: Server,
-    title: 'Node.js Backend',
+    title: 'Backend Development',
     description:
-      'Develop scalable backend services, authentication systems and RESTful APIs using Node.js and Express.',
+      'Develop backend applications and business logic using Python, Django and Django REST Framework.',
     accent: '#22c55e',
   },
   {
-    icon: Sparkles,
-    title: 'AI Automation',
+    icon: Workflow,
+    title: 'REST API Development',
     description:
-      'OpenAI integrations, OCR workflows and intelligent document processing.',
-    accent: '#ec4899',
+      'Design and integrate RESTful APIs to connect frontend applications with backend services.',
+    accent: '#a855f7',
   },
   {
     icon: Database,
     title: 'Database Design',
     description:
-      'Efficient MySQL and MongoDB database architecture and optimization.',
+      'Design and work with structured databases using PostgreSQL, MySQL and SQLite.',
     accent: '#f59e0b',
   },
   {
-    icon: Workflow,
-    title: 'API Integration',
+    icon: ShieldCheck,
+    title: 'Authentication & Security',
     description:
-      'REST APIs, third-party integrations and secure authentication systems.',
-    accent: '#a855f7',
+      'Implement secure authentication flows using JWT and integrate protected API endpoints.',
+    accent: '#ec4899',
   },
 ]
 </script>
@@ -76,9 +75,9 @@ const services = [
           What I Can Build For You
         </h2>
         <p class="mt-4 text-base leading-relaxed text-neutral-400 sm:text-lg">
-          I build secure, scalable and modern web applications using
-          Laravel, Vue.js, Node.js and AI-powered solutions tailored to
-          business needs.
+          I build practical web solutions across the frontend and backend,
+          with a focus on APIs, authentication, database design and
+          reliable application architecture.
         </p>
       </div>
 

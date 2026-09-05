@@ -17,25 +17,25 @@ const infoCards = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'itsahsan.dev@email.com',
+    value: 'mohamedsharkawy078@gmail.com',
     accent: '#6366f1',
   },
   {
     icon: MapPin,
     label: 'Location',
-    value: ' Lahore, Pakistan',
+    value: 'Cairo, Egypt',
     accent: '#0ea5e9',
   },
   {
     icon: BadgeCheck,
-    label: 'Availability',
-    value: 'Open for Freelance',
+    label: 'Role',
+    value: 'Software Engineer',
     accent: '#22c55e',
   },
   {
     icon: Clock3,
-    label: 'Response Time',
-    value: 'Usually within 24 hours',
+    label: 'Focus',
+    value: 'Full-Stack Development',
     accent: '#f59e0b',
   },
 ]
@@ -128,11 +128,11 @@ async function sendEmail() {
           id="contact-heading"
           class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl"
         >
-          Let's Build Something Amazing Together
+          Let's Work Together
         </h2>
         <p class="mt-4 text-base leading-relaxed text-neutral-400 sm:text-lg">
-          Have a project idea, freelance opportunity or collaboration in
-          mind? I'd love to hear from you.
+          Have a project, collaboration or opportunity in mind?
+Feel free to get in touch.
         </p>
       </div>
 
@@ -177,7 +177,7 @@ async function sendEmail() {
             style="animation-delay: 340ms"
           >
             <a
-              href="https://github.com/ahsanali35103"
+              href="https://github.com/MohamedBendari"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit my GitHub profile"
@@ -187,7 +187,7 @@ async function sendEmail() {
             </a>
             
             <a 
-              href="https://www.linkedin.com/in/ahsan-ali-it/"
+              href="https://www.linkedin.com/in/mohamedbendarysaber"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit my LinkedIn profile"
@@ -197,8 +197,8 @@ async function sendEmail() {
             </a>
 
             <a
-  href="/Ahsan_Ali_Resume.pdf"
-  download="Ahsan_Ali_Resume.pdf"
+  href="/Mohamed_Bendary_Saber_CV.pdf"
+  download="Mohamed_Bendary_Saber_CV.pdf"
   target="_blank"
   rel="noopener"
   aria-label="Download my resume"

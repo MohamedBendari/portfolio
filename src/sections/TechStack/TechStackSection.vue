@@ -1,51 +1,170 @@
 <script setup>
 import {
-  Layers,
   Code2,
   Component,
   Braces,
   Server,
-  Route,
   Database,
-  Leaf,
-  Wind,
+  Globe,
+  ShieldCheck,
+  KeyRound,
   GitBranch,
   Github,
-  Globe,
-  Container,
   Terminal,
-  ScanText,
-  Sparkles,
-} from 'lucide-vue-next'
+  Send,
+  Monitor,
+  FileCode2,
+}from 'lucide-vue-next'
 
 // Category -> visual accent (gradient pair used for icon bg, glow, border)
 const categoryAccents = {
-  Frontend: { from: '#34d399', to: '#0ea5e9', glow: 'rgba(52, 211, 153, 0.35)' },
-  Backend: { from: '#818cf8', to: '#6366f1', glow: 'rgba(99, 102, 241, 0.35)' },
-  Database: { from: '#fbbf24', to: '#f97316', glow: 'rgba(251, 191, 36, 0.35)' },
-  DevOps: { from: '#c084fc', to: '#d946ef', glow: 'rgba(192, 132, 252, 0.35)' },
-  AI: { from: '#fb7185', to: '#ec4899', glow: 'rgba(251, 113, 133, 0.35)' },
+  Languages: {
+    from: '#60a5fa',
+    to: '#2563eb',
+    glow: 'rgba(96, 165, 250, 0.35)',
+  },
+
+  Frontend: {
+    from: '#34d399',
+    to: '#0ea5e9',
+    glow: 'rgba(52, 211, 153, 0.35)',
+  },
+
+  Backend: {
+    from: '#818cf8',
+    to: '#6366f1',
+    glow: 'rgba(99, 102, 241, 0.35)',
+  },
+
+  Database: {
+    from: '#fbbf24',
+    to: '#f97316',
+    glow: 'rgba(251, 191, 36, 0.35)',
+  },
+
+  Tools: {
+    from: '#c084fc',
+    to: '#d946ef',
+    glow: 'rgba(192, 132, 252, 0.35)',
+  },
 }
 
 // Single source of truth for the grid
 const techStack = [
-  { name: 'Laravel', category: 'Backend', icon: Layers },
-  { name: 'PHP', category: 'Backend', icon: Code2 },
-  { name: 'Vue.js', category: 'Frontend', icon: Component },
-  { name: 'JavaScript', category: 'Frontend', icon: Braces },
-  { name: 'Node.js', category: 'Backend', icon: Server },
-  { name: 'Express.js', category: 'Backend', icon: Route },
-  { name: 'MySQL', category: 'Database', icon: Database },
-  { name: 'MongoDB', category: 'Database', icon: Leaf },
-  { name: 'Tailwind CSS', category: 'Frontend', icon: Wind },
-  { name: 'Git', category: 'DevOps', icon: GitBranch },
-  { name: 'GitHub', category: 'DevOps', icon: Github },
-  { name: 'REST API', category: 'Backend', icon: Globe },
-  { name: 'Docker', category: 'DevOps', icon: Container },
-  { name: 'Python', category: 'Backend', icon: Terminal },
-  { name: 'OCR', category: 'AI', icon: ScanText },
-  { name: 'OpenAI API', category: 'AI', icon: Sparkles },
-].map((tech) => ({ ...tech, accent: categoryAccents[tech.category] }))
+  // Languages
+  {
+    name: 'C#',
+    category: 'Languages',
+    icon: Braces,
+  },
+  {
+    name: 'JavaScript',
+    category: 'Languages',
+    icon: Braces,
+  },
+  {
+    name: 'Python',
+    category: 'Languages',
+    icon: Code2,
+  },
+  {
+    name: 'Java',
+    category: 'Languages',
+    icon: Code2,
+  },
+  {
+    name: 'C++',
+    category: 'Languages',
+    icon: Code2,
+  },
+
+  // Frontend
+  {
+    name: 'HTML5',
+    category: 'Frontend',
+    icon: FileCode2,
+  },
+  {
+    name: 'CSS3',
+    category: 'Frontend',
+    icon: FileCode2,
+  },
+  {
+    name: 'Vue.js',
+    category: 'Frontend',
+    icon: Component,
+  },
+  {
+    name: 'Vite',
+    category: 'Frontend',
+    icon: Monitor,
+  },
+
+  // Backend
+  {
+    name: 'Django',
+    category: 'Backend',
+    icon: Server,
+  },
+  {
+    name: 'Django REST Framework',
+    category: 'Backend',
+    icon: Server,
+  },
+  {
+    name: 'REST APIs',
+    category: 'Backend',
+    icon: Globe,
+  },
+  {
+    name: 'JWT Authentication',
+    category: 'Backend',
+    icon: ShieldCheck,
+  },
+
+  // Database
+  {
+    name: 'PostgreSQL',
+    category: 'Database',
+    icon: Database,
+  },
+  {
+    name: 'MySQL',
+    category: 'Database',
+    icon: Database,
+  },
+  {
+    name: 'SQLite',
+    category: 'Database',
+    icon: Database,
+  },
+
+  // Tools
+  {
+    name: 'Git',
+    category: 'Tools',
+    icon: GitBranch,
+  },
+  {
+    name: 'GitHub',
+    category: 'Tools',
+    icon: Github,
+  },
+  {
+    name: 'VS Code',
+    category: 'Tools',
+    icon: Code2,
+  },
+  {
+    name: 'Postman',
+    category: 'Tools',
+    icon: Send,
+  },
+].map((tech) => ({
+  ...tech,
+  accent: categoryAccents[tech.category],
+}))
+
 </script>
 
 <template>
@@ -79,9 +198,9 @@ const techStack = [
           Technologies I Work With
         </h2>
         <p class="mt-4 text-base leading-relaxed text-neutral-400 sm:text-lg">
-          I build scalable, secure and modern web applications using
-          industry-standard technologies across frontend, backend and AI
-          automation.
+          I build responsive and scalable web applications using modern
+frontend and backend technologies, with a focus on REST APIs,
+database design, and reliable software solutions.
         </p>
       </div>
 

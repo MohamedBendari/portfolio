@@ -5,48 +5,44 @@ import { GraduationCap, BriefcaseBusiness, Code2, Rocket } from 'lucide-vue-next
 const timeline = [
   {
     icon: GraduationCap,
-    year: 'Graduate',
-    title: 'BS Information Technology',
-    subtitle: 'University Graduate',
+    year: '2026',
+    title: 'Bachelor of Technology in Software Engineering',
+    subtitle: 'New Cairo Technological University',
     description:
-    ` BS Information Technology ,
-University of Education-Lahore ,
-2021 – 2025 , 
-
-Focused on Software Engineering, Database Systems, Web Development and Programming Fundamentals.`,
+      'Graduated with a focus on software engineering, web development, programming and database systems.',
     accent: '#6366f1',
     current: false,
   },
+
   {
     icon: BriefcaseBusiness,
-    year: 'Internship',
-    title: 'Laravel Backend Internship',
-    subtitle: 'Software Engineer Intern in Programmer Force Lahore',
+    year: 'Training',
+    title: 'WE Summer Training',
+    subtitle: 'Technical Training',
     description:
-      'Worked on Laravel, PHP, REST APIs, Authentication, Database Design and Team Collaboration.',
+      'Completed practical technical training and gained additional exposure to software development and professional IT environments.',
     accent: '#ec4899',
     current: false,
   },
+
   {
     icon: Code2,
-    year: 'Projects',
-    title: 'Building Real World Projects',
-    subtitle: null,
+    year: 'Training',
+    title: 'ITI Summer Training',
+    subtitle: 'Information Technology Institute',
     description:
-      'Developed Asset Management System, AI Powered PDF Processor, Chat Application and modern web applications.',
+      'Completed technical training focused on developing practical software engineering and programming skills.',
     accent: '#22c55e',
     current: false,
   },
+
   {
     icon: Rocket,
-    year: 'Present',
-    title: 'Current Focus',
-    subtitle: null,
+    year: '2026',
+    title: 'Full-Stack Development',
+    subtitle: 'Building Real-World Projects',
     description:
-      `Available for Remote Jobs,
-       Open Source,
-       AI Automation,
-       Full Stack Development`,
+      'Developing full-stack applications using Vue.js, Django REST Framework, PostgreSQL and modern web technologies, including the ANCS graduation project.',
     accent: '#f59e0b',
     current: true,
   },
@@ -65,17 +61,17 @@ Focused on Software Engineering, Database Systems, Web Development and Programmi
         <span
           class="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400"
         >
-          Professional Journey
+          My Journey
         </span>
         <h2
           id="experience-heading"
           class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl"
         >
-          My Learning &amp; Career Timeline
+          My Education &amp; Development Journey
         </h2>
         <p class="mt-4 text-base leading-relaxed text-neutral-400 sm:text-lg">
-          A timeline highlighting my education, internship experience and
-          continuous growth as a Full Stack Developer.
+          A timeline highlighting my education, technical training and
+growth through hands-on software development projects.
         </p>
       </div>
 

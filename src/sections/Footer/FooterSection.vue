@@ -16,9 +16,21 @@ const quickLinks = [
 ]
 
 const socialLinks = [
-  { label: 'GitHub', href: 'https://github.com/ahsanali35103', icon: Github },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ahsan-ali-it/', icon: Linkedin },
-  { label: 'Email', href: ':itsahsan.dev@gmail.com', icon: Mail },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/MohamedBendari',
+    icon: Github,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/mohamedbendarysaber',
+    icon: Linkedin,
+  },
+  {
+    label: 'Email',
+    href: 'mailto:mohamedsharkawy078@gmail.com',
+    icon: Mail,
+  },
 ]
 
 /* ------------------------------------------------------------------ */
@@ -85,14 +97,14 @@ onMounted(() => {
         <!-- Brand -->
         <div class="flex flex-col items-center md:items-start">
           <h2 class="text-xl font-semibold tracking-tight text-white">
-            Ahsan Ali
+            Mohamed Bendary 
           </h2>
           <p class="mt-1 text-sm font-medium text-indigo-400">
             Full Stack Developer
           </p>
           <p class="mt-4 max-w-xs text-sm leading-relaxed text-neutral-400">
-            Building scalable web applications with Laravel, Vue.js, Node.js
-            and AI Automation.
+              Building practical web applications with a focus on full-stack
+  development, REST APIs and database-driven solutions.
           </p>
         </div>
 
@@ -141,7 +153,7 @@ onMounted(() => {
 
       <!-- Bottom Area -->
       <div class="mt-10 flex flex-col items-center gap-2 text-center text-xs text-neutral-500">
-        <p>&copy; 2026 Ahsan Ali.</p>
+        <p>&copy; 2026 Mohamed Bendary .</p>
         <p>Built with Vue 3 + Tailwind CSS.</p>
       </div>
     </div>
